@@ -1,0 +1,737 @@
+html {
+    scroll-behavior: smooth;
+}
+::selection {
+    background-color: #1d6c1d;
+    color: #fff;
+}
+body {
+    font-family: "Dongle", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: Poppins, sans-serif;
+    font-family: Righteous, cursive;
+    font-family: Roboto, sans-serif;
+    font-family: "Roboto Mono", monospace;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-main-color: #89b758;
+    --fontbold: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+a:hover {
+    opacity: 0.5;
+}
+a {
+    color: #fff;
+}
+button {
+    border: none;
+}
+header {
+    background-color: var(--background-main-color);
+    width: 100%;
+}
+header .container {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+header .container .left-section {
+    display: flex;
+    gap: 10px;
+}
+header .container .left-section p,
+img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header .container .left-section p {
+    color: #fff;
+    font-family: fantasy;
+}
+header .container .links ul {
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    transition: 0.3s;
+    margin-top: 30px;
+    font-size: 16px;
+}
+header .container .links ul a {
+    transition: 0.3s;
+}
+header .container li .butt button {
+    background-color: #fff;
+    border-radius: 100px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 12px;
+}
+.pizza {
+    background-color: var(--background-main-color);
+}
+.pizza .container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+}
+.pizza .container img {
+    margin: auto;
+    padding-bottom: 50px;
+}
+.pizza .container h1 {
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: -5px;
+    font-style: italic;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    animation: tracking-in-contract-bck 5.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+.pizza .container p {
+    color: #fff;
+    line-height: 1.6;
+    font-size: 12px;
+    font-family: normal;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: -30px;
+}
+.pizza .container .butt button {
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 70px;
+    width: 130px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.pizza .container button:hover {
+    background-color: #000;
+    color: #fff;
+    width: 170px;
+}
+.fast-food {
+    background-color: #fff;
+    margin-top: 30px;
+}
+.fast-food .container .heading {
+    text-align: center;
+}
+.fast-food .container .heading h3 {
+    color: var(--background-main-color);
+    font-style: italic;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: -2px;
+    font-size: 20px;
+}
+.fast-food .container .heading h1 {
+    color: #383838;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: -2px;
+    margin: 13px;
+}
+.fast-food .container .parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 50px;
+}
+.fast-food .container .parent .card .image1,
+.image2,
+.image3 {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.fast-food .container .parent .card .image1 {
+    background-image: url(/imgs/pizza4.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 386px;
+}
+.fast-food .container .parent .card .image1:hover {
+    background-image: url(/imgs/tst1.avif);
+    background-size: cover;
+}
+.fast-food .container .parent .card .image2:hover {
+    background-image: url(/imgs/test2222.jpeg);
+}
+.fast-food .container .parent .card .image3:hover {
+    background-image: url(/imgs/test3.avif);
+}
+.fast-food .container .parent .card .image2 {
+    background-image: url(/imgs/b2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 386px;
+}
+.fast-food .container .parent .card .image3 {
+    background-image: url(/imgs/tacos.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 386px;
+}
+.fast-food .container .parent .card {
+    margin: auto;
+    box-shadow: 1px 1px 21px -6px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 1px 1px 21px -6px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 1px 1px 21px -6px rgba(0, 0, 0, 0.66);
+    border-radius: 8px;
+}
+.fast-food .container .parent .card .sheet {
+    background-color: #00000054;
+    text-align: center;
+    width: 170px;
+    margin: auto;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+}
+.fast-food .container .parent .card .sheet h2 {
+    font-size: 17px;
+    font-family: emoji;
+}
+.fast-food .container .parent .card .sheet p {
+    font-size: 12px;
+    color: #b7b7b7;
+    margin: 5px;
+    font-family: normal;
+}
+section {
+    margin-top: 100px;
+    background-color: #fafafa;
+}
+section .container {
+    position: relative;
+}
+section .container .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+section .container .parent .card {
+    box-shadow: 1px 1px 64px -42px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 1px 1px 64px -42px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 1px 1px 64px -42px rgba(0, 0, 0, 0.78);
+    margin-bottom: 50px;
+}
+section .container .parent .card .pic1 {
+    background-image: url(/imgs/fire.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 337px;
+}
+section .container .parent .card .pic1:hover {
+    background-image: url(/imgs/fire2.jpeg);
+}
+section .container .parent .card .pic2 {
+    background-image: url(/imgs/makaronee.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 337px;
+}
+section .container .parent .card .pic2:hover {
+    background-image: url(/imgs/maka2.jpeg);
+}
+section .container .parent .card .pic1,
+.pic2 {
+    transition: 0.8s;
+    border-radius: 5px;
+}
+section .container .parent .card .text {
+    background-color: #fff;
+    width: 500px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 10px;
+}
+section .container .parent .card .text h2 {
+    color: var(--background-main-color);
+    letter-spacing: -2px;
+    font-style: italic;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+section .container .parent .card .text h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    opacity: 0.8;
+    font-size: 36px;
+}
+section .container .parent .card .text P {
+    font-size: 14px;
+    width: 380px;
+    font-family: normal;
+    color: gray;
+    text-transform: lowercase;
+    text-align: center;
+    margin: auto;
+}
+section .container .parent .card .text button {
+    position: absolute;
+    top: 328px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-main-color);
+    border-radius: 100px;
+    width: 135px;
+    height: 42px;
+    color: #fff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+}
+section .container .parent .card .text button:hover {
+    background-color: #000;
+    width: 210px;
+    letter-spacing: 1px;
+}
+.anime .container {
+    margin-top: 30px;
+    width: 630px;
+    height: 620px;
+    background-color: var(--background-main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.anime .container .right-section {
+    color: #fff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.anime .container .right-section img {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    animation-duration: 15s;
+}
+.anime .container .right-section p {
+    width: 120px;
+}
+.anime .container .left-section .pizza-move {
+    position: relative;
+}
+.anime .container .left-section .pizza-move img {
+    position: relative;
+    animation-name: just-move;
+}
+.anime .container .left-section .pizza-move {
+    margin-left: -20px;
+}
+.anime .container .left-section .pizza-move img {
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.56, -0-0.01, 0.46, 0.96);
+}
+@keyframes moving {
+    0% {
+        margin-right: 10%;
+    }
+    50% {
+        margin-left: 10%;
+    }
+    100% {
+        margin: 0 normal;
+    }
+}
+.menu .container {
+    margin-top: 70px;
+}
+.menu .container .special-heading {
+    text-align: center;
+}
+.menu .container .special-heading h3 {
+    color: var(--background-main-color);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 26px;
+    font-style: italic;
+}
+.menu .container .special-heading h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 56px;
+    letter-spacing: -2px;
+    margin-top: -2px;
+    color: #383838;
+}
+.menu .container .parent {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    padding: 40px;
+}
+.menu .container .parent img {
+    width: 105px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 1px 42px 0 -35px rgba(29, 108, 29, 0.61);
+    -webkit-box-shadow: 1px 42px 0 -35px rgba(29, 108, 29, 0.61);
+    -moz-box-shadow: 1px 42px 0 -35px rgba(29, 108, 29, 0.61);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.menu .container .parent img:hover {
+    box-shadow: 0 0 0 8px rgba(29, 108, 29, 0.61);
+    -webkit-box-shadow: 0 0 0 8px rgba(29, 108, 29, 0.61);
+    -moz-box-shadow: 0 0 0 8px rgba(29, 108, 29, 0.61);
+}
+.menu .container .parent .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu .container .parent .left-section .card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.menu .container .parent .left-section .card .text .namePrice {
+    display: flex;
+    justify-content: space-between;
+}
+.menu .container .parent .left-section .namePrice h2 {
+    color: #383838;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.menu .container .parent .left-section .namePrice h3 {
+    color: var(--background-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+.menu .container .parent .left-section .card .text p {
+    text-align: left;
+    font-family: normal;
+    line-height: 1.3;
+    font-size: 14px;
+    color: #797979;
+}
+.menu .container .parent .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.menu .container .parent .right-section .card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.menu .container .parent .right-section .card .text .namePrice {
+    display: flex;
+    justify-content: space-between;
+}
+.menu .container .parent .right-section .namePrice h2 {
+    color: #383838;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.menu .container .parent .right-section .namePrice h3 {
+    color: var(--background-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+.menu .container .parent .right-section .card .text p {
+    text-align: left;
+    font-family: normal;
+    line-height: 1.3;
+    font-size: 14px;
+    color: #797979;
+}
+.menu .container .parent .card {
+    width: 440px;
+}
+.about {
+    background-color: #232323;
+    color: #fff;
+}
+.about .container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 20px;
+}
+.about .container .card {
+    width: 400px;
+}
+.about .container .card img {
+    width: 400px;
+    height: 400px;
+    margin-top: 120px;
+    transition: 0.4s;
+    animation: rotate-center 60s linear infinite alternate both;
+}
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.about .container .card h3 {
+    color: #d70000;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    letter-spacing: -1px;
+    font-size: 30px;
+}
+.about .container .card h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 1900;
+    line-height: 0.8;
+}
+.about .container .card .text1 {
+    text-align: left;
+}
+.about .container .card .text2 {
+    text-align: right;
+}
+.about .container .card p {
+    color: #c4c4c4;
+    font-family: normal;
+    line-height: 1.6;
+    margin: 30px 0;
+    font-size: 14px;
+}
+.about .container .card .butt {
+    padding: 30px;
+}
+.about .container .card .butt button {
+    background-color: red;
+    font-family: var(--fontBold);
+    padding: 13px;
+    width: 149px;
+    color: #fff;
+    border-radius: 70px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about .container .card .butt button:hover {
+    background-color: #000;
+}
+.video {
+    position: relative;
+}
+.video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 10%);
+    border-bottom: none;
+}
+.video video {
+    width: 100%;
+    filter: brightness(50%);
+    position: relative;
+}
+.video .text {
+    position: absolute;
+    border-color: red;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.7;
+}
+.video .text h2 {
+    font-family: var(--fontBold);
+    font-size: 30px;
+}
+.video .text p {
+    font-size: 13px;
+    color: rgba(217, 217, 217, 0.709);
+}
+.connect {
+    background-color: var(--background-main-color);
+    height: 50vh;
+}
+.connect .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.connect .container .left .text h1 {
+    font-family: var(--fontBold);
+    font-size: 50px;
+    color: #fff;
+}
+.connect .container .left .text p {
+    font-family: normal;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 13px;
+}
+.connect .container .left form input {
+    border-radius: 20px;
+    padding: 7px;
+    border: none;
+    font-size: 12px;
+    font-family: normal;
+}
+.connect .container .left form input:first-child /* new idea */
+.connect .container .left form input::placeholder {
+    font-size: 13px;
+    font-family: normal;
+    text-align: left;
+    padding: 9px;
+}
+.connect .container .left form input:last-child {
+    background-color: #000;
+    color: #fff;
+    width: 80px;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.connect .container .left form input:last-child:hover {
+    background-color: silver;
+}
+
+footer {
+    background-color: var(--background-main-color);
+    font-family: var(--fontBold);
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+footer .container .card .logo {
+    background-image: url(/imgs/Tech-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+footer .container .card {
+    padding: 30px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.6;
+}
+footer .container .card ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+footer .container .card ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+footer .footer-bottom {
+    background-color: rgba(29, 108, 29, 0.388);
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+footer .footer-bottom::first-letter {
+    font-size: 14px;
+}
+footer span {
+    margin: 0 auto;
+    font-family: var(--fontBold);
+    font-size: 14px;
+}
+footer .container .card:last-child {
+    width: 450px;
+    font-size: 15px;
+    margin-top: -5px;
+}
